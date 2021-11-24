@@ -1,0 +1,83 @@
+/* Global styles */
+html {
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+}
+h1 {
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+/* Grid */
+.reading-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "past present future"
+    ". buttons .";
+}
+
+.past {
+  grid-area: past;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.present {
+  grid-area: present;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.future {
+  grid-area: future;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttons {
+  grid-area: buttons;
+  align-self: center;
+  justify-self: center;
+}
+
+/* Button formatting */
+#readingBtn {
+  width: auto;
+  border-radius: 5px;
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#readingBtn:hover {
+  background-color: lightskyblue;
+}
+
+/* Cards */
+#presentCard {
+  border: 2px black solid;
+  height: 200px;
+  width: 100px;
+}
+
+#pastCard {
+  border: 2px black solid;
+  height: 200px;
+  width: 100px;
+}
+
+#futureCard {
+  border: 2px black solid;
+  height: 200px;
+  width: 100px;
+}
