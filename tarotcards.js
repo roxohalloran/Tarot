@@ -2,6 +2,7 @@
 let pastCard
 let presentCard
 let futureCard
+const btnClick = document.querySelector("#readingBtn");
 
 //Creating the cards, each one has a name and a meaning
 let cards = [
@@ -103,12 +104,14 @@ const drawCard = () =>  {
     return cards[drawn];
 }
 
-console.log(drawCard());
-
 
 //Checking that cards are not duplicates
 
 
+//Listening for the button click
+btnClick.addEventListener('click', () => {
+    console.log(drawCard());
+})
 //Displaying the cards and predictions
 
 

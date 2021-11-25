@@ -1,7 +1,7 @@
 # Tarot Reader 
 
 ## About This Project
-This is a vanilla JavaScript Tarot card reader. It works by selecting three random cards from the Major Arcana and displaying them as past, present or future.
+This is a vanilla JavaScript Tarot card reader. It works by selecting three random cards from the [Major Arcana](https://en.wikipedia.org/wiki/Major_Arcana) and displaying them as past, present or future.
 
 ### Languages
 - JavaScript (vanilla)
