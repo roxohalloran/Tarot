@@ -176,6 +176,3 @@ btnClick.addEventListener("click", () => {
   separateCards();
   fillPrediction();
 });
-
-//Displaying the cards and predictions
-//Place them onto the UI

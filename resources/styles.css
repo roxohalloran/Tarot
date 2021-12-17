@@ -75,23 +75,13 @@ h2 {
 }
 
 /* Cards */
-#presentCard {
-  border: 2px black solid;
-  height: 200px;
-  width: 100px;
-  margin-bottom: 20px;
-}
-
-#pastCard {
-  border: 2px black solid;
-  height: 200px;
-  width: 100px;
-  margin-bottom: 20px;
-}
-
+#presentCard,
+#pastCard,
 #futureCard {
   border: 2px black solid;
   height: 200px;
   width: 100px;
   margin-bottom: 20px;
+  font-size: 30px;
+  padding-top: 15%;
 }
