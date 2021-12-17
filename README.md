@@ -12,4 +12,4 @@ This is a vanilla JavaScript Tarot card reader. It works by selecting three rand
 
 ### How To Use It
 
-Click the button and the prediction will be made.
+Click the button and the prediction will be made. The meaning of the cards is still under construction.
