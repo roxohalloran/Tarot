@@ -147,6 +147,13 @@ function separateCards() {
   console.log(
     `Your past card is ${pastCard.name}, your present card is ${presentCard.name} and your future card is ${futureCard.name}`
   );
+  document.getElementById("pastReading").innerHTML = pastCard.name;
+  document.getElementById("presentReading").innerHTML = presentCard.name;
+  document.getElementById("futureReading").innerHTML = futureCard.name;
+
+  document.getElementById("pastCard").innerHTML = pastCard.emoji;
+  document.getElementById("presentCard").innerHTML = presentCard.emoji;
+  document.getElementById("futureCard").innerHTML = futureCard.emoji;
 }
 
 //Listening for the button click
