@@ -5,6 +5,20 @@ let futureCard;
 let drawnCards;
 const btnClick = document.querySelector("#readingBtn");
 
+//Display variables
+const pastReading = [
+  document.getElementById("pastReading"),
+  document.getElementById("pastCard"),
+];
+const presentReading = [
+  document.getElementById("presentReading"),
+  document.getElementById("presentCard"),
+];
+const futureReading = [
+  document.getElementById("futureReading"),
+  document.getElementById("futureCard"),
+];
+
 //Creating the cards, each one has a name and a meaning
 const cards = [
   {
@@ -143,23 +157,24 @@ function separateCards() {
   pastCard = drawnCards[0];
   presentCard = drawnCards[1];
   futureCard = drawnCards[2];
+}
 
-  console.log(
-    `Your past card is ${pastCard.name}, your present card is ${presentCard.name} and your future card is ${futureCard.name}`
-  );
-  document.getElementById("pastReading").innerHTML = pastCard.name;
-  document.getElementById("presentReading").innerHTML = presentCard.name;
-  document.getElementById("futureReading").innerHTML = futureCard.name;
+//Placing the prediction
+function fillPrediction() {
+  pastReading[0].innerHTML = pastCard.name;
+  presentReading[0].innerHTML = presentCard.name;
+  futureReading[0].innerHTML = futureCard.name;
 
-  document.getElementById("pastCard").innerHTML = pastCard.emoji;
-  document.getElementById("presentCard").innerHTML = presentCard.emoji;
-  document.getElementById("futureCard").innerHTML = futureCard.emoji;
+  pastReading[1].innerHTML = pastCard.emoji;
+  presentReading[1].innerHTML = presentCard.emoji;
+  futureReading[1].innerHTML = futureCard.emoji;
 }
 
 //Listening for the button click
 btnClick.addEventListener("click", () => {
   drawnCards = drawCard(3);
   separateCards();
+  fillPrediction();
 });
 
 //Displaying the cards and predictions
